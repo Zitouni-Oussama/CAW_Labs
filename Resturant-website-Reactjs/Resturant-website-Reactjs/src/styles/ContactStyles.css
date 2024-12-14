@@ -1,0 +1,42 @@
+/* Styles pour la page Contact */
+.contact-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h4 {
+    font-weight: bold;
+    color: #daa520; /* Bleu clair */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-container p {
+    color: #34495e; /* Gris foncé */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-container .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    color: #777;
+  }
+  
+  /* Réduire la taille du texte pour les petits écrans */
+  @media (max-width: 600px) {
+    .contact-container h4 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-container p {
+      font-size: 1rem;
+    }
+  }
+  

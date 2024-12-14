@@ -1,0 +1,140 @@
+/* Conteneur principal du panier */
+.cart-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 45px;
+}
+
+/* Titre du panier */
+.cart-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Message si le panier est vide */
+.empty-cart-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Liste des articles dans le panier */
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Élément d'article du panier */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenu de l'article (nom, quantité) */
+.cart-item-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nom de l'article */
+.cart-item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Prix unitaire de l'article */
+.cart-item-individual-price {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Quantité de l'article */
+.cart-item-quantity {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Prix total de l'article */
+.cart-item-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Bouton de suppression d'article */
+.cart-item-delete-button {
+    font-size: 1.2rem;
+    color: #f44336;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cart-item-delete-button:hover {
+    color: #d32f2f;
+}
+
+/* Conteneur pour le total */
+.total-price-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Conteneur du bouton de paiement */
+.checkout-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style du bouton de paiement */
+.checkout-button {
+    background-color: goldenrod;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-button:hover {
+    background-color: rgb(236, 174, 16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-button:active {
+    background-color: goldenrod;
+    transform: scale(0.98);
+}
+
+/* Style pour le message d'erreur */
+.cart-error-message {
+    color: #d32f2f;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}

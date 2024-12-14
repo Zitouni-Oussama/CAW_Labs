@@ -1,0 +1,146 @@
+.order-ticket-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.order-ticket-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 2px solid goldenrod;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.ticket {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ticket h2 {
+    color: goldenrod;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.ticket p {
+    margin: 8px 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.ticket p strong {
+    color: #333;
+}
+
+.ticket ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.ticket ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
+.empty-orders,
+.error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 30px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.ticket .order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ticket .order-footer span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.ticket .order-footer .price {
+    color: #2ecc71;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .order-ticket-container {
+        padding: 15px;
+    }
+
+    .ticket {
+        padding: 15px;
+    }
+
+    .ticket h2 {
+        font-size: 1.3rem;
+    }
+
+    .ticket p,
+    .ticket ul li {
+        font-size: 0.9rem;
+    }
+
+    .ticket .order-footer span,
+    .ticket .order-footer .price {
+        font-size: 1rem;
+    }
+}
+
+
+.empty-orders {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+}
+
+.empty-orders p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn-order-now {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.btn-order-now:hover {
+    background-color: #0056b3;
+}

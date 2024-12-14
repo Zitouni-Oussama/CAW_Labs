@@ -1,0 +1,161 @@
+/* Conteneur principal du menu */
+
+
+/* Conteneur des cartes du menu */
+.menuCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Style des cartes individuelles */
+.menuCard {
+    width: 250px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.menuCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style de l'image dans la carte */
+.menuCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.menuCard img:hover {
+    opacity: 0.8;
+}
+
+/* Contenu de la carte */
+.cardContent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Nom du menu */
+.menuCardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description du menu */
+.menuCardDescription {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Prix du menu */
+.menuCardPrice {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2ecc71;
+    background-color: #fffbf1;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+/* Conteneur des boutons de filtrage */
+.headerContainer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style des boutons de catégorie */
+.headerContainer button {
+    background-color: rgb(243, 185, 39);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    /* Met le texte en majuscule */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.headerContainer button:hover {
+    background-color: goldenrod;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.headerContainer button:active {
+    background-color: rgb(180, 136, 24);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+    /* Effet de compression au clic */
+}
+
+.headerContainer button.selected {
+    background-color: #28a745;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.headerContainer button.selected:hover {
+    background-color: #218838;
+}
+
+/* Disposition des boutons (flexbox) */
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Style des boutons sur mobile */
+@media (max-width: 768px) {
+    .headerContainer button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+    .menuCard {
+        width: 100%;
+    }
+
+
+    .menuCardTitle {
+        font-size: 1.1rem;
+    }
+
+    .menuCardDescription {
+        font-size: 0.8rem;
+    }
+
+    .menuCardPrice {
+        font-size: 1rem;
+    }
+}
